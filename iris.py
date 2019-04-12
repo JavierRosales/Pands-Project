@@ -1,9 +1,25 @@
 # David Markham 2019-04-01
 # Fisher Iris Data Set 
 
-# Below is my investigation and findings on the Iris Data Set. 
+# Find the mean, min and max of each column along with some percentiles.
 
+# First Import the libaries we will need for examining this data set.
+# Found a site which goes into great detail to help users new to programming.
+# https://machinelearningmastery.com/machine-learning-in-python-step-by-step/ 
 
-import numpy as np 
+# Import all the required libraries.
+import numpy as np
 import pandas as pd
-import matplotlib as pl 
+import matplotlib.pyplot as plt
+
+
+
+
+# Load dataset
+data = ("iris.csv")
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
+dataset = pd.read_csv(data, header = 1) 
+
+
+
+print(dataset.describe())
