@@ -15,7 +15,7 @@ data = ("iris.csv")
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
 dataset = pd.read_csv(data, header = 0)
 
-# This is will output a univariable plot
+# This is will output a univariable plot.
 # It helps us understand the data in each variable. 
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 plt.show()
