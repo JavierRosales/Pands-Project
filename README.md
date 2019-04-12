@@ -32,14 +32,16 @@ Finally I will provide a summary and draw my conclusion of the data set.
 
 
 
-
 **2. What's involved when investigating a data set and how Python can be used as a tool.**
 
 When investigating data four steps to follow can be as follows;
 
 **1. Question**: What are you trying to resolve or achieve?
+
 **2. Analyze**: What tools are you going to use to present your findings?
+
 **3. Investigate**: Research and investigate the problem/sector you are trying to extract data from.
+
 **4. Repeat**: Keep repeating the process until you resolve the problem.
 
 Data can be an excellent resource when trying to predict, forecast, improve decision-making or gain a competitive advantage. When investigating a data set you ask yourself what you want to get from it? What is the sole purpose of it, and will pulling data answer the problem want to solve correctly? You will need to set aside an amount of time to research the topic/sector you are investigating and understand the problem. An excellent way of aiding in your investigations is by displaying results, can be done by writing code using Python. This will display data and explore trends weekly, monthly, quarterly or yearly based on what you are looking for.
@@ -51,7 +53,9 @@ Try and picture what your data set will look like, how you are going to write th
 
 **3. What is the Fisher Iris data set?**
 
-This Iris data set was introduced by British mathematician and statistician Ronald Fisher which he published in his paper in 1936 *The use of multiple measurements in taxonomic problems*. The data set is often used in data mining, classification and clustering examples and to test algorithms. The data set contains a set of 150 records of flowers representing three species of Iris (Iris setosa, versicolor and virginica) under five attributes - petal length, petal width, sepal length, sepal width and species. It is a data set which is based on the combination of four measurements, petal length and width, sepal length and width. Fisher developed a linear discriminant model to distinguish the species from each other.
+This Iris data set was introduced by British mathematician and statistician Ronald Fisher which he published in his paper in 1936 *The use of multiple measurements in taxonomic problems*. The data set is often used in data mining, classification and clustering examples and to test algorithms. It is famous because it is used as the "hello world" in data sets and statistics by most people.
+
+The data set contains five columns, the first four are the measurements of the flowers in centimeters and the fifth is the species of the flower. The set comprises of 150 records of flowers representing three species of Iris (Iris setosa, versicolor and virginica) under five attributes - petal length, petal width, sepal length, sepal width and species. It is a data set which is based on the combination of four measurements, petal length and width, sepal length and width. Fisher developed a linear discriminant model to distinguish the species from each other. "Logistic regression is a classification algorithm traditionally limited to only two-class classification problems. If you have more than two classes then Linear Discriminant Analysis is the preferred linear classification technique."
 
 
 
@@ -66,7 +70,7 @@ In 1933 he became head of Eugenics( beliefs and practices that aim to improve th
 
 In 1936 he introduced the *Iris Flower Data Set* as an example of discriminant analysis. This was a method used in statistics, pattern recognition and machine learning to find a linear combination that characterizes or separates two or more classes of objects or events. 
 
-He worked in Cambridge from 1940 until 1956 where he published many more books and papers on data sets. In 1957 he retired to Adelaide, and he died in 1962.
+He worked in Cambridge from 1940 until 1956 where he published many more books and papers on data sets. In 1957 he retired to Adelaide, and he died in 1962 from an operation he had to remove colon cancer.
 
 
 
@@ -78,20 +82,29 @@ He laid the foundations of statistics as a science, which he proved in much of h
 
 **6. My summary of research and investigation.** 
 
-I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris csv file which will help me find the relationship, if any, between the three different species which are as follows, the setosa, versicolor and virginica.
+I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns, if any, between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
+
+To get started you will need to import some libraries which will read and help analyze and plot your data. These will consist of Pandas, Numpy, Matplotlib.pylpot. All three are explained here https://www.bogotobogo.com/python/python_Pandas_NumPy_Matplotlib.php.com - automatic! 
 
 **7. Findings.**
 
-**8. References** 
+**8. Bibliography** 
 
-https://www.britannica.com/biography/Ronald-Aylmer-Fisher 
+Encyclopedia Britannica, Sir Ronald Aylmer Fisher, 2019, viewed on 2019-04-03,  https://www.britannica.com/biography/Ronald-Aylmer-Fisher 
 
-https://www.statisticssolutions.com/manova-analysis-anova/ 
+Statistics Solutions, Analysis of Variance, 2013, viewed on 2019-04-04, https://www.statisticssolutions.com/manova-analysis-anova/ 
 
-https://en.wikipedia.org/wiki/Ronald_Fisher 
 
-https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/ 
+Warwick University, Plotting the Iris Data, 2008, viewed on 2019-04-04, https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/ 
 
-https://www.quora.com/As-a-data-scientist-how-do-you-start-investigating-a-data-set-assuming-that-you-just-pulled-the-data-from-source-and-prepared-it-in-a-nice-possibly-tabular-form 
+Quora,Investigating a Data Set, 2018, viewed on 2019-04-07, https://www.quora.com/As-a-data-scientist-how-do-you-start-investigating-a-data-set-assuming-that-you-just-pulled-the-data-from-source-and-prepared-it-in-a-nice-possibly-tabular-form 
 
-https://www.encyclopediaofmath.org/index.php/Fisher,_Ronald_Aylmer
+Encyclopedia of Mathematics, Ronald Aylmer FISHER, 2016, viewed on 2019-04-08, https://www.encyclopediaofmath.org/index.php/Fisher,_Ronald_Aylmer
+
+Kaggle, Machine learning first steps with the Iris dataset, 2015, viewed on 2019-04-08, http://blog.kaggle.com/2015/04/22/scikit-learn-video-3-machine-learning-first-steps-with-the-iris-dataset/
+
+Machine Learning Mastery, Linear Discriminant Analysis for Machine Learning, 2016, viewed 2019-04-09,https://machinelearningmastery.com/linear-discriminant-analysis-for-machine-learning/
+
+https://realpython.com/python-csv/ 
+
+https://www.datacamp.com/community/tutorials/exploratory-data-analysis-python 
