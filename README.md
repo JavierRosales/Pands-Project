@@ -4,6 +4,7 @@
 # Lecturer: Ian McLoughlin 
 
 # Topic: Iris Data Set
+![iris_petal_sepal](https://user-images.githubusercontent.com/47174160/56134578-c660cd80-5f86-11e9-87a8-f3183579abdc.png)
 
 ## This project required me to research the well known Fisher's Iris data set, and provide my own analysis of it. This will require me to research and provide scripts of Python code to illustrate my findings. 
 
