@@ -103,6 +103,8 @@ dataset = pd.read_csv(data, header=0)
 **Statistical Data** 
 When you have this done you can test your data statistically using many different commands such as for example: 
 
+![Stats](https://user-images.githubusercontent.com/47174160/56133914-64539880-5f85-11e9-9322-42ee82e27e94.PNG)
+
 1. print(dataset.shape) - This will output rows and column totals. 
 
 2. print(dataset.head()) - Enter a number within the brackets to display the number of data rows. 
