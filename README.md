@@ -5,6 +5,7 @@
 
 # Topic: Iris Data Set
 
+![iris_petal_sepal](https://user-images.githubusercontent.com/47174160/56137829-89e4a000-5f8d-11e9-9b9c-82aa58013d95.png)
 
 ## This project required me to research the well known Fisher's Iris data set, and provide my own analysis of it, and provide scripts of Python code to illustrate tables, graphs, histograms etc. 
 
@@ -65,7 +66,7 @@ The data set contains five columns, the first four are the measurements of the f
 
 **4. Who was fisher?**
 
-
+![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg)
 
 Sir Ronald Fisher was a British Statistician who pioneered the application of statistical procedures to the design of scientific experiments. By many, he was thought to be the greatest statistician of the last century who made profound contributions to both theoretical and applied statistics, and population genetics. He was born in London and studied mathematics at Cambridge University and graduated with a B.A. in astronomy. He continued to work at Cambridge after he graduated where he focused on astronomy and physics,the theory of errors. He taught maths and physics in Cambridge while he focused his research on statistics and genetics until 1919.
 
@@ -111,7 +112,7 @@ dataset = pd.read_csv(data, header=0)
 **Statistical Data** 
 When you have this done you can test your data statistically using many different commands such as for example: 
 
-
+![Stats](https://user-images.githubusercontent.com/47174160/56137892-a1238d80-5f8d-11e9-9602-a40215592a7b.PNG)
 
 1. print(dataset.shape) - This will output rows and column totals. 
 
@@ -138,6 +139,7 @@ plt.show()
 
 **2. Histogram**: A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension. Usually it has bins, where every bin has a minimum and maximum value. This can be illustrated using the matplotlib.pyplot function from the Python library.  
 
+For this data to be displayed using a histogram I entered the following code on Python.
 
 - data = ("iris.csv")
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
@@ -146,7 +148,7 @@ dataset = pd.read_csv(data, header = 0)
 - dataset.hist()
 plt.show()
 
-For this data to be displayed using a histogram I entered the following code on Python. 
+ 
 
 
 
