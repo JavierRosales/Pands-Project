@@ -138,6 +138,11 @@ plt.show()
 
 **2. Histogram**: A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension. Usually it has bins, where every bin has a minimum and maximum value. This can be illustrated using the matplotlib.pyplot function from the Python library.  
 
+
+- data = ("iris.csv")
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
+dataset = pd.read_csv(data, header = 0)
+
 - dataset.hist()
 plt.show()
 
