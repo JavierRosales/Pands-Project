@@ -141,7 +141,7 @@ plt.show()
 - dataset.hist()
 plt.show()
 
-For this data to be displayed using a histogram I entered the following 
+For this data to be displayed using a histogram I entered the following code on Python. 
 
 
 
