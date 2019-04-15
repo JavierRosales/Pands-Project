@@ -5,7 +5,7 @@
 
 # Topic: Iris Data Set
 
-## This project required me to research the well known Fisher's Iris data set, and provide my own analysis of it. This will require me to research and provide scripts of Python code to illustrate my findings. 
+## This project required me to research the well known Fisher's Iris data set, and provide my own analysis of it, and provide scripts of Python code to illustrate tables, graphs, histograms etc. 
 
 # Contents 
 
@@ -24,7 +24,7 @@
 
 I will be first explaining what is involved when setting out to investigate a data set, and how you can back up arguments using scripts of code through Python and graphs which will illustrate and back up your findings.
 
-In my research I will be providing, background information on the data set, a detailed analysis of the data set and my findings, which will be included in this ReadMe. In this I will explain how I investigated and summarized the data set, my findings and other peoples analysis's which I considered interesting. 
+In my research I will be providing, background information on the data set, a detailed analysis of the data set and my findings, which will be included in this ReadMe. In this I will explain how I investigated and summarized the data set, my findings and other peoples analysis which I considered interesting. 
  
 I will be using Python scripts of code to explain my arguments and findings, and attached will be graphs and snippets in the ReadMe.
 
@@ -34,6 +34,8 @@ Finally I will provide a summary and draw my conclusion of the data set.
 
 **2. What's involved when investigating a data set and how Python can be used as a tool.**
 
+To get started you will need to install Anaconda and Python and a command line on your machine. Python is regarded by many as the easiest machine language to learn, but it is also a high level and powerful language. The Iris CSV file data set will also have to be downloaded and from this you will be generating all you findings through tables, graphs etc. When writing your code to present visual findings, you will need to import libraries such as Numpy, Pandas, Matplotlib etc. 
+
 When investigating data four steps to follow can be as follows;
 
 **1. Question**: What are you trying to resolve or achieve?
@@ -42,7 +44,7 @@ When investigating data four steps to follow can be as follows;
 
 **3. Investigate**: Research and investigate the problem/sector you are trying to extract data from.
 
-**4. Repeat**: Keep repeating the process until you resolve the problem.
+**4. Repeat**: Keep repeating the process until you resolve the problem and present your findings.
 
 Data can be an excellent resource when trying to predict, forecast, improve decision-making or gain a competitive advantage. When investigating a data set you ask yourself what you want to get from it? What is the sole purpose of it, and will pulling data answer the problem you want to solve correctly? You will need to set aside an amount of time to research the topic/sector you are investigating and understand the problem. An excellent way of aiding in your investigations is by displaying results via graphs, scatter plots etc, which can be done by writing code using Python. This will display data and explore weekly, monthly, quarterly or yearly trends based on what you are looking for.
 
@@ -75,6 +77,7 @@ He worked in Cambridge from 1940 until 1956 where he published many more books a
 
 
 **5. How was his research beneficial?**
+
 Fisher introduced many new concepts and approaches to improve research, backed up by mathematical statistics and other theories. Two of his most influential books are *Statistical Methods for Research Workers*, which was to revolutionize statistics and biology (1925), and *The Design of Experiments* (1935). This established the cause and effect relationship, the information retrieved from this managed process inputs to optimise outputs. 
 
 He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data.
@@ -82,9 +85,9 @@ He laid the foundations of statistics as a science, which he proved in much of h
 
 **6. My summary of research and investigation.** 
 
-I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns, if any, between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
+I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
 
-To get started you will need to import some libraries which will read and help analyze and plot your data. These will consist of Pandas, Numpy, Matplotlib.pylpot. All three are explained here https://www.bogotobogo.com/python/python_Pandas_NumPy_Matplotlib.php.com 
+To get started you will need to import some libraries which will read and help analyze and plot your data. These will consist of Pandas, Numpy, Matplotlib.pylpot. All three are explained on [Cloudxlab](https://cloudxlab.com/blog/numpy-pandas-introduction)
 
 When **Importing the data from the CSV file** you will need to enter this to ensure that the data is read correctly and not the flower details on the first row on each column. 
 
@@ -100,6 +103,8 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species'
 dataset = pd.read_csv(data, header=0)
 
 
+
+
 **Statistical Data** 
 When you have this done you can test your data statistically using many different commands such as for example: 
 
@@ -110,6 +115,8 @@ When you have this done you can test your data statistically using many differen
 3. print(dataset.describe()) - This outputs the mean, max, min as well as some other data in percentage
 
 4.  print(dataset.groupby('class').size()) - This will display each classification of data along with the number of each.
+
+
 
 
 **Data Visualization** 
@@ -155,5 +162,7 @@ Machine Learning Mastery, Linear Discriminant Analysis for Machine Learning, 201
 Real Python, Reading and Writing CSV Files, 2018, viewed on 2019-04-12, https://realpython.com/python-csv/ 
 
 Data Camp, Python Exploratory Data Analysis Tutorial, 2017, viewed on 2019-04-12, https://www.datacamp.com/community/tutorials/exploratory-data-analysis-python 
+
+CloudXlab, Numpy, Pandas and Matplotlib, viewed on 2019-04-12, https://cloudxlab.com/blog/numpy-pandas-introduction 
 
 Wellbeing at School, Understanding and interpreting box plots, viewed on 2019-04-12, https://www.wellbeingatschool.org.nz/information-sheet/understanding-and-interpreting-box-plots 
