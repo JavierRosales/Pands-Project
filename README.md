@@ -4,7 +4,6 @@
 # Lecturer: Ian McLoughlin 
 
 # Topic: Iris Data Set
-![iris_petal_sepal](https://user-images.githubusercontent.com/47174160/56134578-c660cd80-5f86-11e9-87a8-f3183579abdc.png)
 
 ## This project required me to research the well known Fisher's Iris data set, and provide my own analysis of it. This will require me to research and provide scripts of Python code to illustrate my findings. 
 
@@ -63,7 +62,7 @@ The data set contains five columns, the first four are the measurements of the f
 
 **4. Who was fisher?**
 
-![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg)
+
 
 Sir Ronald Fisher was a British Statistician who pioneered the application of statistical procedures to the design of scientific experiments. By many, he was thought to be the greatest statistician of the last century who made profound contributions to both theoretical and applied statistics, and population genetics. He was born in London and studied mathematics at Cambridge University and graduated with a B.A. in astronomy. He continued to work at Cambridge after he graduated where he focused on astronomy and physics,the theory of errors. He taught maths and physics in Cambridge while he focused his research on statistics and genetics until 1919.
 
@@ -106,7 +105,7 @@ dataset = pd.read_csv(data, header=0)
 **Statistical Data** 
 When you have this done you can test your data statistically using many different commands such as for example: 
 
-![Stats](https://user-images.githubusercontent.com/47174160/56133914-64539880-5f85-11e9-9322-42ee82e27e94.PNG)
+
 
 1. print(dataset.shape) - This will output rows and column totals. 
 
