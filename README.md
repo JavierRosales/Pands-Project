@@ -22,7 +22,7 @@
 
 
 
-**1. Project Plan**
+# 1. Project Plan
 
 I will be first explaining what is involved when setting out to investigate a data set, and how you can back up arguments using scripts of code through Python and graphs which will illustrate and back up your findings.
 
@@ -34,7 +34,7 @@ Finally I will provide a summary and draw my conclusion of the data set.
 
 
 
-**2. What's involved when investigating a data set and how Python can be used as a tool.**
+# 2. What's involved when investigating a data set and how Python can be used as a tool.
 
 To get started you will need to install Anaconda and Python and a command line on your machine. Python is regarded by many as the easiest machine language to learn, but it is also a high level and powerful language. The Iris CSV file data set will also have to be downloaded and from this you will be generating all you findings through tables, graphs etc. When writing your code to present visual findings, you will need to import libraries such as Numpy, Pandas, Matplotlib etc. 
 
@@ -55,7 +55,7 @@ Try and picture what your data set will look like, how you are going to write th
 
 
 
-**3. What is the Fisher Iris data set?**
+# 3. What is the Fisher Iris data set?
 
 This Iris data set was introduced by British mathematician and statistician Ronald Fisher which he published in his paper in 1936 *The use of multiple measurements in taxonomic problems*. The data set is often used in data mining, classification and clustering examples and to test algorithms. It is famous because it is used as the "hello world" in data sets and statistics by most people.
 
@@ -64,7 +64,7 @@ The data set contains five columns, the first four are the measurements of the f
 
 
 
-**4. Who was fisher?**
+# 4. Who was fisher?
 
 ![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg)
 
@@ -80,14 +80,14 @@ He worked in Cambridge from 1940 until 1956 where he published many more books a
 
 
 
-**5. How was his research beneficial?**
+#5. How was his research beneficial?
 
 Fisher introduced many new concepts and approaches to improve research, backed up by mathematical statistics and other theories. Two of his most influential books are *Statistical Methods for Research Workers*, which was to revolutionize statistics and biology (1925), and *The Design of Experiments* (1935). This established the cause and effect relationship, the information retrieved from this managed process inputs to optimise outputs. 
 
 He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data.
 
 
-**6. My summary of research and investigation.** 
+# 6. My summary of research and investigation.
 
 I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
 
@@ -136,6 +136,7 @@ I found information online and code which enabled me to display the data for eac
 - dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 plt.show()
 
+![Plot](https://user-images.githubusercontent.com/47174160/56138624-2b202600-5f8f-11e9-8787-67614c3cacf6.PNG)
 
 **2. Histogram**: A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension. Usually it has bins, where every bin has a minimum and maximum value. This can be illustrated using the matplotlib.pyplot function from the Python library.  
 
@@ -148,13 +149,24 @@ dataset = pd.read_csv(data, header = 0)
 - dataset.hist()
 plt.show()
 
+![Histogram](https://user-images.githubusercontent.com/47174160/56138674-3ecb8c80-5f8f-11e9-981f-89c3dcb65f8d.PNG)
+
+## Relationship between variables. 
+
+This can be achieved by multivariate plots which can reveal the relationship among several variables simultaneously which generally include the form, strength and dependence of each relationship. There are numerous plots available to display your findings such as, 2D, 3D, colour, scatter plots etc. The closer the dots come together on scatter plots, the stronger the relationship. 
+
+Given a set of variables, the scatter plot matrix contains all the pair-wise scatter plots of the variables on a single page in a matrix format. There is a positive correlation within the data below which I extracted from using Python. 
+
+
+![Scattermatrix](https://user-images.githubusercontent.com/47174160/56145049-75a79f80-5f9b-11e9-8314-2a1efcfe44e0.PNG)
+
  
 
 
 
-**7. Findings.**
+# 7. Findings.
 
-**8. Bibliography** 
+# 8. Bibliography 
 
 Encyclopedia Britannica, Sir Ronald Aylmer Fisher, 2019, viewed on 2019-04-03,  https://www.britannica.com/biography/Ronald-Aylmer-Fisher 
 
