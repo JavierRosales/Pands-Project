@@ -63,6 +63,8 @@ The data set contains five columns, the first four are the measurements of the f
 
 **4. Who was fisher?**
 
+![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg)
+
 Sir Ronald Fisher was a British Statistician who pioneered the application of statistical procedures to the design of scientific experiments. By many, he was thought to be the greatest statistician of the last century who made profound contributions to both theoretical and applied statistics, and population genetics. He was born in London and studied mathematics at Cambridge University and graduated with a B.A. in astronomy. He continued to work at Cambridge after he graduated where he focused on astronomy and physics,the theory of errors. He taught maths and physics in Cambridge while he focused his research on statistics and genetics until 1919.
 
 In 1919 he did statistical work associated with plant breeding experiments and his methods were published and remained in print for more than 50 years. The experiments that he conducted led to theories about gene dominance and fitness. He analyzed crop data and experiments since the late 1800's and developed the analysis of variance. (https://www.statisticssolutions.com/manova-analysis-anova/) In 1921 He published *Studies in Crop Variation*, which was his first application of analysis of variance.(ANOVA)
