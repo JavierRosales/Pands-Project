@@ -26,9 +26,9 @@
 
 I will be first explaining what is involved when setting out to investigate a data set, and how you can back up arguments using scripts of code through Python and graphs which will illustrate and back up your findings.
 
-In my research I will be providing, background information on the data set, a detailed analysis of the data set and my findings, which will be included in this ReadMe. In this I will explain how I investigated and summarized the data set, my findings and other peoples analysis which I considered interesting. 
+In my research I will be providing, background information on the data set, a detailed analysis of the data set and my findings, which will be included in this ReadMe. In this I will explain how I investigated and summarized the data set, statistical data of each species of flower, and what relationships are there between the three species.
  
-I will be using Python scripts of code to explain my arguments and findings, and attached will be graphs and snippets in the ReadMe.
+I will be using Python scripts of code to explain my arguments and findings, and attached will be graphs and other tools I used to provide my findings, along with screenshots of my work in the ReadMe.
 
 Finally I will provide a summary and draw my conclusion of the data set.
 
@@ -36,7 +36,7 @@ Finally I will provide a summary and draw my conclusion of the data set.
 
 # 2. What's involved when investigating a data set and how Python can be used as a tool.
 
-To get started you will need to install Anaconda and Python and a command line on your machine. Python is regarded by many as the easiest machine language to learn, but it is also a high level and powerful language. The Iris CSV file data set will also have to be downloaded and from this you will be generating all you findings through tables, graphs etc. When writing your code to present visual findings, you will need to import libraries such as Numpy, Pandas, Matplotlib etc. 
+To get started you will need to install Anaconda and Python and a command line on your machine. Python is regarded by many as the easiest machine language to learn, but it is also a high level and powerful language. The Iris CSV file data set will also have to be downloaded and from this you will be generating all your findings through tables, graphs etc. When writing your code to present visual findings, you will need to import libraries such as Numpy, Pandas, Matplotlib etc. 
 
 When investigating data four steps to follow can be as follows;
 
@@ -80,7 +80,7 @@ He worked in Cambridge from 1940 until 1956 where he published many more books a
 
 
 
-#5. How was his research beneficial?
+# 5. How was his research beneficial?
 
 Fisher introduced many new concepts and approaches to improve research, backed up by mathematical statistics and other theories. Two of his most influential books are *Statistical Methods for Research Workers*, which was to revolutionize statistics and biology (1925), and *The Design of Experiments* (1935). This established the cause and effect relationship, the information retrieved from this managed process inputs to optimise outputs. 
 
@@ -91,7 +91,17 @@ He laid the foundations of statistics as a science, which he proved in much of h
 
 I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
 
-To get started you will need to import some libraries which will read and help analyze and plot your data. These will consist of Pandas, Numpy, Matplotlib.pylpot. All three are explained on [Cloudxlab](https://cloudxlab.com/blog/numpy-pandas-introduction)
+To get started you will need to import some libraries which will read and help analyze and plot your data. These will consist of Pandas, Numpy, Matplotlib.pylpot and Seaborn. 
+
+- 1. Numpy: Designed for mathematical and scientific computation.
+
+- 2. Pandas: Manipulates and analyzes data, for eg CSV files or SQL databases.
+
+- 3. Matplotlib: A Python plotting library which plots and displays data on graphs, histograms,      bar-charts, scatterplots etc.
+
+- 4. Seaborn: A Python data visualization library based on matplotlib. It provides a      high-level interface for drawing attractive and informative statistical graphics. 
+     (http://seaborn.pydata.org/)
+
 
 When **Importing the data from the CSV file** you will need to enter this to ensure that the data is read correctly and not the flower details on the first row on each column. 
 
@@ -138,6 +148,7 @@ plt.show()
 
 ![Plot](https://user-images.githubusercontent.com/47174160/56138624-2b202600-5f8f-11e9-8787-67614c3cacf6.PNG)
 
+
 **2. Histogram**: A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension. Usually it has bins, where every bin has a minimum and maximum value. This can be illustrated using the matplotlib.pyplot function from the Python library.  
 
 For this data to be displayed using a histogram I entered the following code on Python.
@@ -151,6 +162,7 @@ plt.show()
 
 ![Histogram](https://user-images.githubusercontent.com/47174160/56138674-3ecb8c80-5f8f-11e9-981f-89c3dcb65f8d.PNG)
 
+
 ## Relationship between variables. 
 
 This can be achieved by multivariate plots which can reveal the relationship among several variables simultaneously which generally include the form, strength and dependence of each relationship. There are numerous plots available to display your findings such as, 2D, 3D, colour, scatter plots etc. The closer the dots come together on scatter plots, the stronger the relationship. 
@@ -160,8 +172,22 @@ Given a set of variables, the scatter plot matrix contains all the pair-wise sca
 
 ![Scattermatrix](https://user-images.githubusercontent.com/47174160/56145049-75a79f80-5f9b-11e9-8314-2a1efcfe44e0.PNG)
 
- 
 
+From the above scatterplot we can see that the petal and sepal measurements are quite different from the other two species.
+
+# Coloured Scatterplot
+
+This will help us determine what data variables (species) have more in common with each other as we found out above.(Benalexkeen.com)
+
+## Here we can see Petal length versus Sepal lenght. 
+
+ ![ColScatterplot](https://user-images.githubusercontent.com/47174160/56202574-48123300-603b-11e9-9da6-911896be3a74.PNG)
+
+## And the relationship between petal width and sepal width
+
+![Scatterplot width col](https://user-images.githubusercontent.com/47174160/56204108-8f4df300-603e-11e9-8cdd-784f0e66fab1.PNG) 
+
+We can clearly see the strong relationship between the Iris Virginica and Versicolor.
 
 
 # 7. Findings.
@@ -189,10 +215,10 @@ Real Python, Reading and Writing CSV Files, 2018, viewed on 2019-04-12, https://
 
 Data Camp, Python Exploratory Data Analysis Tutorial, 2017, viewed on 2019-04-12, https://www.datacamp.com/community/tutorials/exploratory-data-analysis-python 
 
-<<<<<<< HEAD
 CloudXlab, Numpy, Pandas and Matplotlib, viewed on 2019-04-12, https://cloudxlab.com/blog/numpy-pandas-introduction 
 
 Wellbeing at School, Understanding and interpreting box plots, viewed on 2019-04-12, https://www.wellbeingatschool.org.nz/information-sheet/understanding-and-interpreting-box-plots 
-=======
-Wellbeing at School, Understanding and interpreting box plots, viewed on 2019-04-12, https://www.wellbeingatschool.org.nz/information-sheet/understanding-and-interpreting-box-plots 
->>>>>>> 8353a405de3c9cc34a8013511eaba514ea99a761
+
+Seaborn, viewed on 2019-04-16, http://seaborn.pydata.org
+
+Benalexkeen.com, Scatterplots in Matploblib, viewed on 2019-04-16, http://benalexkeen.com/scatter-charts-in-matplotlib/
