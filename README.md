@@ -88,7 +88,7 @@ Fisher introduced many new concepts and approaches to improve research, backed u
 He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data.
 
 
-# 6. My summary of research and investigation.
+# 6. Summary of my research and investigation of the Iris data-set.
 
 I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
 
@@ -198,13 +198,17 @@ This will help us determine what data variables (species) have more in common wi
 We can clearly see the strong relationship between the Iris Virginica and Versicolor through the size of their petal width. With the Setosa, this species is a lot easier to identify because of the size difference it has in the sepal width over the other two species. From the above visual data I have provided, it is clear that the Setosa is a different species of Iris plant. 
 
 
-# Classification Algorithms 
+## Classification Algorithms 
 
 We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 
 - Here we see different groupings of machine learning.
 
-![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.png 
+
+![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.png
+
+
+
 
 When applying an algorithm you split the dataset into training and testing. The testing dataset is generally a lot smaller as it will help in training the model more effectively. 
 
@@ -212,7 +216,7 @@ When applying an algorithm you split the dataset into training and testing. The 
 
 - Next we will use different algorithms will will help us to choose the best model done through an 'accuracy' metric which determines the most accurate percentage.
 
-# Split-out validation dataset
+## Split-out validation dataset
 
 array = dataset.values
 
@@ -268,7 +272,11 @@ for name, model in models:
 
 - which gives us a score of: 
 
+
 ![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG 
+
+
+
 
 SVM: Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
 
