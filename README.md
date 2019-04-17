@@ -203,7 +203,8 @@ We can clearly see the strong relationship between the Iris Virginica and Versic
 We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 
 # Here we see different groupings of machine learning.
-![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.png
+![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.PNG)
+
 
 
 
@@ -280,7 +281,7 @@ for name, model in models:
 # Which gives us a score of: 
 
 
-![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG 
+![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG)
 
 
 
