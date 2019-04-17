@@ -88,7 +88,7 @@ Fisher introduced many new concepts and approaches to improve research, backed u
 He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data.
 
 
-# 6. Summary of my research and investigation of the Iris data-set.
+# 6. Summary of my research and investigation of the Iris Data-Set.
 
 I started my research on the Irish data set by going through various websites reading and watching material based on the data set. First I downloaded the Iris data csv file which will help me find the relationship or patterns between the three different species which are as follows, the setosa, versicolor and virginica. I will be using various scripts of Python code to calculate the maximum, minimum, mean of the columns and other methods  to demonstrate my findings. I will be also using tables and graphs as necessary. 
 
@@ -127,9 +127,11 @@ dataset = pd.read_csv(data, header=0)
 
 
 **Statistical Data** 
-When you have this done you can test your data statistically using many different commands such as for example: 
+When you have this done you can test your data statistically using many different commands such as for example: print(dataset.describe())
 
 ![Stats](https://user-images.githubusercontent.com/47174160/56137892-a1238d80-5f8d-11e9-9602-a40215592a7b.PNG)
+
+Other lines of code to output statistical data are as follows:
 
 1. print(dataset.shape) - This will output rows and column totals. 
 
@@ -203,8 +205,8 @@ We can clearly see the strong relationship between the Iris Virginica and Versic
 We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 
 # Here we see different groupings of machine learning.
-![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.PNG)
 
+![Machinelearning classification](https://user-images.githubusercontent.com/47174160/56304368-e387ce80-6135-11e9-8dd0-109e29891ac1.png)
 
 
 
@@ -240,7 +242,8 @@ seed = 7
 X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
 
 seed = 7
-scoring = 'accuracy' 
+scoring = 'accuracy' - This will check the scoring accuracy of each algorithm.
+
 
 ## Spot Check Algorithms
 
