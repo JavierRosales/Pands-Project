@@ -11,7 +11,7 @@
 
 # Contents 
 
-1. **Project Plan** 
+1. **Project Plan and purpose.** 
 2. **What's involved when investigating a data set and how Python can be used as a tool.**
 3. **What is the Iris Data Set**
 4. **Who was Fisher?** 
@@ -24,13 +24,11 @@
 
 # 1. Project Plan
 
-I will be first explaining what is involved when setting out to investigate a data set, and how you can back up arguments using scripts of code through Python and graphs which will illustrate and back up your findings.
+I will be first explaining what is involved when setting out to investigate a data set, and how you can back up arguments using scripts of code through Python and graphs which will illustrate and back up your findings. The purpose of this project was to gain skills in machine learning classification, data visualization and to improve my skills in learning machine languages.
 
 In my research I will be providing, background information on the data set, a detailed analysis of the data set and my findings, which will be included in this ReadMe. In this I will explain how I investigated and summarized the data set, statistical data of each species of flower, and what relationships are there between the three species.
  
-I will be using Python scripts of code to explain my arguments and findings, and attached will be graphs and other tools I used to provide my findings, along with screenshots of my work in the ReadMe.
-
-Finally I will provide a summary and draw my conclusion of the data set.
+I will be using  scripts of Python code to explain my arguments and findings, and attached will be graphs and other visual data I used to provide my findings, along with screenshots of my work in the ReadMe. Finally I will provide a summary and draw my conclusion of the data set.
 
 
 
@@ -48,16 +46,19 @@ When investigating data four steps to follow can be as follows;
 
 **4. Repeat**: Keep repeating the process until you resolve the problem and present your findings.
 
-Data can be an excellent resource when trying to predict, forecast, improve decision-making or gain a competitive advantage. When investigating a data set you ask yourself what you want to get from it? What is the sole purpose of it, and will pulling data answer the problem you want to solve correctly? You will need to set aside an amount of time to research the topic/sector you are investigating and understand the problem. An excellent way of aiding in your investigations is by displaying results via graphs, scatter plots etc, which can be done by writing code using Python. This will display data and explore weekly, monthly, quarterly or yearly trends based on what you are looking for.
+Data can be an excellent resource when trying to predict, forecast, improve decision-making or gain a competitive advantage. When investigating a data set you ask yourself what you want to get from it? What is the sole purpose of it, and will pulling data answer the problem you want to solve correctly? You will need to set aside an amount of time to research the topic/sector you are investigating and understand the problem. An excellent way of aiding in your investigations is by displaying results via graphs, scatter plots etc, which can be done by writing code using Python. Machine learning is about making predictions. This will display data and explore weekly, monthly, quarterly or yearly trends based on what you are looking for.
 
 Try and picture what your data set will look like, how you are going to write the code necessary to back up your findings. It's a lot easier to spot relationships between variables if you analyze data from different subsets. What type of statistical tools you will need to get your point across, for example bar charts, line charts, histograms etc. What tools you can use to measure the relationship between two variables or multi-variables? Some examples to achieve this would be correlation testing or scatter plots. And for multi-variables you might use heat maps, regression, ratios etc. 
 
 
 
 
-# 3. What is the Fisher Iris data set?
+# 3. What is the Iris data set?
 
-This Iris data set was introduced by British mathematician and statistician Ronald Fisher which he published in his paper in 1936 *The use of multiple measurements in taxonomic problems*. The data set is often used in data mining, classification and clustering examples and to test algorithms. It is famous because it is used as the "hello world" in data sets and statistics by most people.
+![Setosa](https://user-images.githubusercontent.com/47174160/56285152-76ad0e00-610e-11e9-84d3-9e001a5bb63d.jpg)
+
+This Iris data set was introduced by British mathematician and statistician Ronald Fisher which he published in his paper in 1936 *The use of multiple measurements in taxonomic problems*. The data set is often used in data mining, classification and clustering examples and to test algorithms. It is famous because it is used as the "hello world" in data sets and statistics by most people. It is traditionally used for classification and prediction to see which features(petal or sepal) of the flower belong to a certain type of Iris flower. This is done through petal and sepal length and width.
+
 
 The data set contains five columns, the first four are the measurements of the flowers in centimeters and the fifth is the species of the flower. The set comprises of 150 records of flowers representing three species of Iris (Iris setosa, versicolor and virginica) under five attributes - petal length, petal width, sepal length, sepal width and species. It is a data set which is based on the combination of four measurements, petal length and width, sepal length and width. Fisher developed a linear discriminant model to distinguish the species from each other. "Logistic regression is a classification algorithm traditionally limited to only two-class classification problems. If you have more than two classes then Linear Discriminant Analysis is the preferred linear classification technique."
 
@@ -97,17 +98,23 @@ To get started you will need to import some libraries which will read and help a
 
 - 2. Pandas: Manipulates and analyzes data, for eg CSV files or SQL databases.
 
-- 3. Matplotlib: A Python plotting library which plots and displays data on graphs, histograms,      bar-charts, scatterplots etc.
+- 3. Matplotlib: A Python plotting library which plots and displays data on graphs, histograms, bar-charts, scatterplots etc.
 
-- 4. Seaborn: A Python data visualization library based on matplotlib. It provides a      high-level interface for drawing attractive and informative statistical graphics. 
+- 4. Seaborn: A Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. 
      (http://seaborn.pydata.org/)
 
 
-When **Importing the data from the CSV file** you will need to enter this to ensure that the data is read correctly and not the flower details on the first row on each column. 
+When **Importing the data from the CSV file** you will need to enter this to ensure that the data is read correctly and not the flower details on the first row on each column. Before you enter this you will first need to import the libraries required to output the data.
 
-import numpy as np,
-import pandas as pd,
-import matplotlib.pyplot as plt
+- Import numpy as np
+
+- Import pandas as pd
+
+- Import matplotlib.pyplot as plt.
+
+- Import Seaborn as sns
+
+- From pandas.plotting import scatter_matrix
 
 
 data = ("iris.csv")
@@ -126,24 +133,25 @@ When you have this done you can test your data statistically using many differen
 
 1. print(dataset.shape) - This will output rows and column totals. 
 
-2. print(dataset.head()) - Enter a number within the brackets to display the number of data rows. 
+2. print(dataset.head()) - Enter a number within the brackets to display the number of data rows you wish to output. 
 
 3. print(dataset.describe()) - This outputs the mean, max, min as well as some other data in percentage
 
-4.  print(dataset.groupby('class').size()) - This will display each classification of data along with the number of each.
+4.  print(dataset.groupby('class').size()) - This will display each classification of data along with the number of each species in this case.
 
 
 
 
 **Data Visualization** 
 
-Next we can look at the data relating to each variable and also the relationships between each of the variables in the data-set. This can be done through scripts which will output data, in this case a Boxplot and Histogram will illustrate the data.
+Next we can look at the data relating to each variable and also the relationships between each of the variables in the data-set. This can be done through histograms, plots etc. By exploring the data visually you can see the relationships between each species by the grouping or clustering on scatterplots and other graphs you may use.
 
 **1. Boxplot**: A box and whisker plot—also called a box plot—displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum. In a box plot, we draw a box from the first quartile to the third quartile. A vertical line goes through the box at the median. The whiskers go from each quartile to the minimum or maximum.(Wellbeing at School) 
 
 I found information online and code which enabled me to display the data for each variable in the set. I done this in the "irisplot.py" folder. 
 
 - dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+
 plt.show()
 
 ![Plot](https://user-images.githubusercontent.com/47174160/56138624-2b202600-5f8f-11e9-8787-67614c3cacf6.PNG)
@@ -179,15 +187,93 @@ From the above scatterplot we can see that the petal and sepal measurements are 
 
 This will help us determine what data variables (species) have more in common with each other as we found out above.(Benalexkeen.com)
 
-## Here we can see Petal length versus Sepal lenght. 
+## Here we can see Petal length versus Sepal length. 
 
  ![ColScatterplot](https://user-images.githubusercontent.com/47174160/56202574-48123300-603b-11e9-9da6-911896be3a74.PNG)
 
-## And the relationship between petal width and sepal width
+## And the relationship between Petal Width and Sepal Width.
 
 ![Scatterplot width col](https://user-images.githubusercontent.com/47174160/56204108-8f4df300-603e-11e9-8cdd-784f0e66fab1.PNG) 
 
-We can clearly see the strong relationship between the Iris Virginica and Versicolor.
+We can clearly see the strong relationship between the Iris Virginica and Versicolor through the size of their petal width. With the Setosa, this species is a lot easier to identify because of the size difference it has in the sepal width over the other two species. From the above visual data I have provided, it is clear that the Setosa is a different species of Iris plant. 
+
+
+# Classification Algorithms 
+
+We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
+
+- Here we see different groupings of machine learning.
+
+![SupervisedvsUnsupervised](https://user-images.githubusercontent.com/47174160/56290813-e07fe480-611b-11e9-8a8e-3d4ef070e10c.png 
+
+When applying an algorithm you split the dataset into training and testing. The testing dataset is generally a lot smaller as it will help in training the model more effectively. 
+
+- Now we will split the dataset in two, 80% of which we will use to train our models and 20% that we will hold back as a validation dataset. 
+
+- Next we will use different algorithms will will help us to choose the best model done through an 'accuracy' metric which determines the most accurate percentage.
+
+# Split-out validation dataset
+
+array = dataset.values
+
+X = array[:,0:4]
+
+Y = array[:,4]
+
+validation_size = 0.20
+
+seed = 7
+
+
+X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+
+seed = 7
+scoring = 'accuracy' 
+
+## Spot Check Algorithms
+
+models = []
+models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC(gamma='auto')))
+
+## Evaluate each model in turn
+
+results = []
+names = []
+for name, model in models:
+	kfold = model_selection.KFold(n_splits=10, random_state=seed)
+	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+	results.append(cv_results)
+	names.append(name)
+	msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+	print(msg)
+
+- We can do this through six different algorithms such as:
+
+1. Logistic Regression (LR)
+
+2. Linear Discriminant Analysis (LDA)
+
+3. K-Nearest Neighbors (KNN).
+
+4. Classification and Regression Trees (CART).
+
+5. Gaussian Naive Bayes (NB).
+
+6. Support Vector Machines (SVM).
+
+- which gives us a score of: 
+
+![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG 
+
+SVM: Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
+
+
+
 
 
 # 7. Findings.
@@ -222,3 +308,7 @@ Wellbeing at School, Understanding and interpreting box plots, viewed on 2019-04
 Seaborn, viewed on 2019-04-16, http://seaborn.pydata.org
 
 Benalexkeen.com, Scatterplots in Matploblib, viewed on 2019-04-16, http://benalexkeen.com/scatter-charts-in-matplotlib/
+
+Youtube, Pandas, Seaborn and Scikit-Learn, viewed on 2019-04-17, https://www.youtube.com/watch?v=3ZWuPVWq7p4
+
+A Medium Corporation, Regression Versus Classification Machine Learning, viewed on 2019-04-17, https://medium.com/quick-code/regression-versus-classification-machine-learning-whats-the-difference-345c56dd15f7
