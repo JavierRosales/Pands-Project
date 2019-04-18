@@ -116,17 +116,17 @@ When **Importing the data from the CSV file** you will need to enter this to ens
 - From pandas.plotting import scatter_matrix
 
 
-data = ("iris.csv")
+`data = ("iris.csv")`
 
-names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
+`names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']`
 
-dataset = pd.read_csv(data, header=0)
+`dataset = pd.read_csv(data, header=0)`
 
 
 
 
 **Statistical Data** 
-When you have this done you can test your data statistically using many different commands such as for example: print(dataset.describe())
+When you have this done you can test your data statistically using many different commands such as for example: `print(dataset.describe())`
 
 ![Stats](https://user-images.githubusercontent.com/47174160/56137892-a1238d80-5f8d-11e9-9602-a40215592a7b.PNG)
 
@@ -254,9 +254,11 @@ We test the data we just split into two groups using various different algorithm
 
 6. Support Vector Machines (SVM).
 
+- This will check the scoring accuracy of each algorithm.
+
 `seed = 7`
 
-`scoring = 'accuracy' - This will check the scoring accuracy of each algorithm.`
+`scoring = 'accuracy'` 
 
 
 ### Spot Check Algorithms
@@ -277,6 +279,8 @@ Here we enter code for the different algorithms we will test.
 
 ### Evaluate each model in turn
 
+- The code blow will evaluate all the models we have entered above and output the scores for each model.
+
 `results = []`
 
 `names = []`
@@ -296,24 +300,29 @@ Here we enter code for the different algorithms we will test.
 
 
 
-# Which gives us a score of: 
+### Which gives us a score of: 
 
 
 ![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG)
 
 
-SVM: Results show Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
+- SVM: Results show Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
 
 - So we now go ahead and test Support Vector Machines to see how accurate it is as it has the highest scoring algorithm. We can do that by entering the following code:
 
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_validation)
-print(accuracy_score(Y_validation, predictions))
-print(confusion_matrix(Y_validation, predictions))
-print(classification_report(Y_validation, predictions)) 
+`svm =SVC(gamma='auto') `
 
-This will output the following results: 
+`svm.fit(X_train, Y_train)`
+
+`predictions = svm.predict(X_validation)`
+
+`print(accuracy_score(Y_validation, predictions))`
+
+`print(confusion_matrix(Y_validation, predictions))`
+
+`print(classification_report(Y_validation, predictions))`
+
+- This will output the following results: 
 
 ![Algorithm predictor](https://user-images.githubusercontent.com/47174160/56357160-c523e080-61d2-11e9-9ae2-a3a5fdd02b0f.PNG) 
 
@@ -321,14 +330,39 @@ This will output the following results:
 
 - Under this are the three errors made which the `print(confusion_matrix(Y_validation, predictions))` displayed. 
 
-- And finally we got the classification report on the validation data by inputting `print(classification_report(Y_validation, predictions))`
+- And finally we got the classification report on the validation data by inputting `print(classification_report(Y_validation, predictions))`. This breaks down each class as follows: 
 
-For more information on how to make predictions and probabilities please look here:  https://machinelearningmastery.com/make-predictions-scikit-learn/
+- Precision: The ratio of correctly predicted positive observations to the total predicted positive observations
+
+- Recall: Recall is the ratio of correctly predicted positive observations to the all observations in actual class
+
+- F1-Score: This gives you the harmonic average of precision and recall. Reaches its best value at One and worst at Zero.
+
+- Support: The number of occurrences in each class. (Scikit-learn, 2018)
 
 
 
 
 # 7. Findings.
+
+- From all the above data that we extracted from the csv Iris data-set and illustrated it is quite obvious that the Setosa is a different breed of Iris. One flower species, the Setosa is linearly separable from the other two, but the other two are not linearly separable from each other. The Virginica and Versicolor are quite larger in Pepal length and width. The Setosa sepal width was larger in a quite a few cases but overall the Virginica and Versicolor was much the larger species out of the three classes which were analyzed. This was displayed in the statistical data and in the different plots we used to display the data. 
+
+- In summary we can predict from the data we have examined that if the Iris flower has a long sepal of 6-8cm, long petals of 5-7cm and wide petals of 1.5-2.5cm then the Iris is most likely an IrisVirginica. If the Iris flower has a short sepal of 4.5-5.5cm, short petals of 1-2cm and very narrow petals of .1-.5cm then the Iris is most likely an Iris-Setosa. Any Iris flower that which measures in between these two classifications is most likely an Iris-Versicolor. 
+
+![Scatterplot width col](https://user-images.githubusercontent.com/47174160/56368890-3de56580-61f0-11e9-9c0e-4723b0d24628.PNG)
+
+![ColScatterplot](https://user-images.githubusercontent.com/47174160/56368952-56ee1680-61f0-11e9-9087-803933b96b4f.PNG)
+
+
+- We then learned how to test the data, train and predict different algorithm models based on score accuracy. We done this by using the classification data through supervised machine learning. We held back some data so we could train using one set and and test using another. We found that (SVM) Support vector Machines had the highest accuracy test. We then went on to test this model with the validation set, from which it got a high score of 93%.
+
+- Tested all the algorithm models 
+
+![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG)
+
+- Tested the model with the highest score. 
+
+![Algorithm predictor](https://user-images.githubusercontent.com/47174160/56357160-c523e080-61d2-11e9-9ae2-a3a5fdd02b0f.PNG)  
 
 # 8. Bibliography 
 
@@ -371,3 +405,5 @@ Math Works, What is machine learning, 2019, viewed on 2019-04-17, https://uk.mat
 Alnalytics Vidhya, Scikit-Learn, 2015, viewed on 2019-04-17, https://www.analyticsvidhya.com/blog/2015/01/scikit-learn-python-machine-learning-tool/
 
 Machine Learning Mastery, How to Make Predictions with Scikit-Learn, 2018, viewed on 2019-04-18, https://machinelearningmastery.com/make-predictions-scikit-learn/ 
+
+Sci-kit Learn, 2018, viewed on 2019-04-18, https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html
