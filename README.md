@@ -71,7 +71,7 @@ The data set contains five columns, the first four are the measurements of the f
 
 Sir Ronald Fisher was a British Statistician who pioneered the application of statistical procedures to the design of scientific experiments. By many, he was thought to be the greatest statistician of the last century who made profound contributions to both theoretical and applied statistics, and population genetics. He was born in London and studied mathematics at Cambridge University and graduated with a B.A. in astronomy. He continued to work at Cambridge after he graduated where he focused on astronomy and physics,the theory of errors. He taught maths and physics in Cambridge while he focused his research on statistics and genetics until 1919.
 
-In 1919 he did statistical work associated with plant breeding experiments and his methods were published and remained in print for more than 50 years. The experiments that he conducted led to theories about gene dominance and fitness. He analyzed crop data and experiments since the late 1800's and developed the analysis of variance. (https://www.statisticssolutions.com/manova-analysis-anova/) In 1921 He published *Studies in Crop Variation*, which was his first application of analysis of variance.(ANOVA)
+In 1919 he did statistical work associated with plant breeding experiments and his methods were published and remained in print for more than 50 years. The experiments that he conducted led to theories about gene dominance and fitness. He analyzed crop data and experiments since the late 1800's and developed the analysis of variance. In 1921 He published *Studies in Crop Variation*, which was his first application of analysis of variance.(Encyclopedia Britannica, 2019)
 
 In 1933 he became head of Eugenics( beliefs and practices that aim to improve the genetic quality of human population by excluding certain groups judged to be inferior and promoting certain groups judged to be superior) at University College London. While here he published *The Design of Experiments* in 1935, which he outlined *The Lady Tasting Tea* which is now a famous design of a statistical randomized experiment. 
 
@@ -85,7 +85,7 @@ He worked in Cambridge from 1940 until 1956 where he published many more books a
 
 Fisher introduced many new concepts and approaches to improve research, backed up by mathematical statistics and other theories. Two of his most influential books are *Statistical Methods for Research Workers*, which was to revolutionize statistics and biology (1925), and *The Design of Experiments* (1935). This established the cause and effect relationship, the information retrieved from this managed process inputs to optimise outputs. 
 
-He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data.
+He laid the foundations of statistics as a science, which he proved in much of his research. The Iris data set which he also produced became a typical test case for many statistical classification techniques in machine learning. There is a strong relationship between the measurements and the species and thus various machine learning models can accurately predict the species given the measurements. He established the Fisher-Race notation, still used today, for Rhesus phenotypes and genotypes. Much of Fisher's work remains relevant,and may even serve as a foundation for future research in the statistical analysis of DNA data. (Encyclopedia of Mathematics, 2016)
 
 
 # 6. Summary of my research and investigation of the Iris Data-Set.
@@ -100,8 +100,7 @@ To get started you will need to import some libraries which will read and help a
 
 - 3. Matplotlib: A Python plotting library which plots and displays data on graphs, histograms, bar-charts, scatterplots etc.
 
-- 4. Seaborn: A Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. 
-     (http://seaborn.pydata.org/)
+- 4. Seaborn: A Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. (Seaborn) 
 
 
 When **Importing the data from the CSV file** you will need to enter this to ensure that the data is read correctly and not the flower details on the first row on each column. Before you enter this you will first need to import the libraries required to output the data.
@@ -133,13 +132,13 @@ When you have this done you can test your data statistically using many differen
 
 Other lines of code to output statistical data are as follows:
 
-1. print(dataset.shape) - This will output rows and column totals. 
+1. `print(dataset.shape)` - This will output rows and column totals. 
 
-2. print(dataset.head()) - Enter a number within the brackets to display the number of data rows you wish to output. 
+2. `print(dataset.head())` - Enter a number within the brackets to display the number of data rows you wish to output. 
 
-3. print(dataset.describe()) - This outputs the mean, max, min as well as some other data in percentage
+3. `print(dataset.describe())` - This outputs the mean, max, min as well as some other data in percentage
 
-4.  print(dataset.groupby('class').size()) - This will display each classification of data along with the number of each species in this case.
+4.  `print(dataset.groupby('class').size())` - This will display each classification of data along with the number of each species in this case.
 
 
 
@@ -152,9 +151,9 @@ Next we can look at the data relating to each variable and also the relationship
 
 I found information online and code which enabled me to display the data for each variable in the set. I done this in the "irisplot.py" folder. 
 
-- dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+- `dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-plt.show()
+`plt.show()`
 
 ![Plot](https://user-images.githubusercontent.com/47174160/56138624-2b202600-5f8f-11e9-8787-67614c3cacf6.PNG)
 
@@ -163,12 +162,13 @@ plt.show()
 
 For this data to be displayed using a histogram I entered the following code on Python.
 
-- data = ("iris.csv")
-names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']
-dataset = pd.read_csv(data, header = 0)
+- `data = ("iris.csv")`
+   `names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'species']`
+   `dataset = pd.read_csv(data, header = 0)`
 
-- dataset.hist()
-plt.show()
+`dataset.hist()`
+  
+`plt.show()`
 
 ![Histogram](https://user-images.githubusercontent.com/47174160/56138674-3ecb8c80-5f8f-11e9-981f-89c3dcb65f8d.PNG)
 
@@ -200,74 +200,47 @@ This will help us determine what data variables (species) have more in common wi
 We can clearly see the strong relationship between the Iris Virginica and Versicolor through the size of their petal width. With the Setosa, this species is a lot easier to identify because of the size difference it has in the sepal width over the other two species. From the above visual data I have provided, it is clear that the Setosa is a different species of Iris plant. 
 
 
-## Classification Algorithms 
+# Algorithms and Predicted Scores.
 
-We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
+## Using Various Algorithm Models we wil predict accuracy scores using our validation data which we split in two groups.
 
-# Here we see different groupings of machine learning.
+We now know that the data above is a *classification problem* as opposed to a *regression problem*. Classification is the task of predicting a discrete class label. Regression is the task of predicting a continuous quantity. These two types categories are known as *Supervised Machine Learning*. The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete). (Math Works, 2019)
 
-![Machinelearning classification](https://user-images.githubusercontent.com/47174160/56304368-e387ce80-6135-11e9-8dd0-109e29891ac1.png)
+## Here we see different groupings of machine learning.
 
-
-
-
-
-
-
-
-
+![Machinelearning classification](https://user-images.githubusercontent.com/47174160/56304368-e387ce80-6135-11e9-8dd0-109e29891ac1.png) (Math Works, 2019)
 
 
 
 
 When applying an algorithm you split the dataset into training and testing. The testing dataset is generally a lot smaller as it will help in training the model more effectively. 
 
-- Now we will split the dataset in two, 80% of which we will use to train our models and 20% that we will hold back as a validation dataset. 
+- Now we will split the dataset in two, 80% of which we will use to train our models and 20% which we will hold back as a validation dataset. 
 
 - Next we will use different algorithms will will help us to choose the best model done through an 'accuracy' metric which determines the most accurate percentage.
 
-## Split-out validation dataset
+### Split-out validation dataset
 
-array = dataset.values
+Here we split the data-set into two groups, one group we hold back on to test the algorithms out from just a certain percentage of the data, known as the validation data-set.
 
-X = array[:,0:4]
+`array = dataset.values`
 
-Y = array[:,4]
+`X = array[:,0:4]`
 
-validation_size = 0.20
+`Y = array[:,4]`
 
-seed = 7
+`validation_size = 0.20`
 
-
-X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
-
-seed = 7
-scoring = 'accuracy' - This will check the scoring accuracy of each algorithm.
+`seed = 7`
 
 
-## Spot Check Algorithms
+`X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)` (Machine Learning Mastery, 2016)
 
-models = []
-models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
-models.append(('LDA', LinearDiscriminantAnalysis()))
-models.append(('KNN', KNeighborsClassifier()))
-models.append(('CART', DecisionTreeClassifier()))
-models.append(('NB', GaussianNB()))
-models.append(('SVM', SVC(gamma='auto')))
+### Next we can do the following: 
 
-## Evaluate each model in turn
+We test the data we just split into two groups using various different algorithm models for accuracy. We can do this by importing *Sklearn*, a very good library for machine learning in Python. It is on NumPy, SciPy and matplotlib, this library contains a lot of efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction. (Analytics Vidha, 2015) 
 
-results = []
-names = []
-for name, model in models:
-	kfold = model_selection.KFold(n_splits=10, random_state=seed)
-	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
-	results.append(cv_results)
-	names.append(name)
-	msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-	print(msg)
-
-- We can do this through six different algorithms such as:
+### We can do this through six different supervised machine learning algorithms which can solve both classification and regression problems. 
 
 1. Logistic Regression (LR)
 
@@ -281,28 +254,78 @@ for name, model in models:
 
 6. Support Vector Machines (SVM).
 
+`seed = 7`
+
+`scoring = 'accuracy' - This will check the scoring accuracy of each algorithm.`
+
+
+### Spot Check Algorithms
+
+Here we enter code for the different algorithms we will test.
+
+`models = []`
+
+`models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))`
+
+`models.append(('LDA', LinearDiscriminantAnalysis()))`
+
+`models.append(('KNN', KNeighborsClassifier()))`
+
+`models.append(('CART', DecisionTreeClassifier()))`
+
+`models.append(('SVM', SVC(gamma='auto')))`
+
+### Evaluate each model in turn
+
+`results = []`
+
+`names = []`
+
+`for name, model in models:`
+
+`kfold = model_selection.KFold(n_splits=10, random_state=seed)`
+
+`cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)`
+
+`results.append(cv_results)`
+
+`names.append(name)`
+
+`msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())`
+`print(msg)` (Machine learning mastery, 2016) 
+
+
+
 # Which gives us a score of: 
 
 
 ![Algorithmscore](https://user-images.githubusercontent.com/47174160/56298108-7e2de080-6129-11e9-9e7a-6171137867e7.PNG)
 
 
+SVM: Results show Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
+
+- So we now go ahead and test Support Vector Machines to see how accurate it is as it has the highest scoring algorithm. We can do that by entering the following code:
+
+knn = KNeighborsClassifier()
+knn.fit(X_train, Y_train)
+predictions = knn.predict(X_validation)
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions)) 
+
+This will output the following results: 
+
+![Algorithm predictor](https://user-images.githubusercontent.com/47174160/56357160-c523e080-61d2-11e9-9ae2-a3a5fdd02b0f.PNG) 
+
+- From the above data we can see that we have an accuracy score of 93 percent. ` print(accuracy_score(Y_validation, predictions))` 
+
+- Under this are the three errors made which the `print(confusion_matrix(Y_validation, predictions))` displayed. 
+
+- And finally we got the classification report on the validation data by inputting `print(classification_report(Y_validation, predictions))`
+
+For more information on how to make predictions and probabilities please look here:  https://machinelearningmastery.com/make-predictions-scikit-learn/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-SVM: Support Vector Machines has the highest scoring accuracy of 0.991667 (0.025000)
 
 
 # 7. Findings.
@@ -314,7 +337,6 @@ Encyclopedia Britannica, Sir Ronald Aylmer Fisher, 2019, viewed on 2019-04-03,  
 Statistics Solutions, Analysis of Variance, 2013, viewed on 2019-04-04, https://www.statisticssolutions.com/manova-analysis-anova/ 
 
 The Python Tutorial, viewed on 2019-0404, https://docs.python.org/3/tutorial/index.html
-
 
 Warwick University, Plotting the Iris Data, 2008, viewed on 2019-04-04, https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/ 
 
@@ -341,3 +363,11 @@ Benalexkeen.com, Scatterplots in Matploblib, viewed on 2019-04-16, http://benale
 Youtube, Pandas, Seaborn and Scikit-Learn, viewed on 2019-04-17, https://www.youtube.com/watch?v=3ZWuPVWq7p4
 
 A Medium Corporation, Regression Versus Classification Machine Learning, viewed on 2019-04-17, https://medium.com/quick-code/regression-versus-classification-machine-learning-whats-the-difference-345c56dd15f7
+
+Machine Learning Mastery, 2016, viewed on 2019-04-17, https://machinelearningmastery.com/machine-learning-in-python-step-by-step
+
+Math Works, What is machine learning, 2019, viewed on 2019-04-17, https://uk.mathworks.com/help/stats/machine-learning-in-matlab.html
+
+Alnalytics Vidhya, Scikit-Learn, 2015, viewed on 2019-04-17, https://www.analyticsvidhya.com/blog/2015/01/scikit-learn-python-machine-learning-tool/
+
+Machine Learning Mastery, How to Make Predictions with Scikit-Learn, 2018, viewed on 2019-04-18, https://machinelearningmastery.com/make-predictions-scikit-learn/ 
