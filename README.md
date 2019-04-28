@@ -18,7 +18,7 @@
 5. **How was his research beneficial?**
 6. **My Research and Investigation**
 7. **Findings**
-8. **References** 
+8. **Bibliography** 
 
 
 
@@ -67,7 +67,7 @@ The data set contains five columns, the first four are the measurements of the f
 
 # 4. Who was fisher?
 
-![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg)
+![H4060169-Sir_Ronald_Fisher](https://user-images.githubusercontent.com/47174160/56134869-628ad480-5f87-11e9-895d-242792215f2c.jpg) (Science Photo, 2019)
 
 Sir Ronald Fisher was a British Statistician who pioneered the application of statistical procedures to the design of scientific experiments. By many, he was thought to be the greatest statistician of the last century who made profound contributions to both theoretical and applied statistics, and population genetics. He was born in London and studied mathematics at Cambridge University and graduated with a B.A. in astronomy. He continued to work at Cambridge after he graduated where he focused on astronomy and physics,the theory of errors. He taught maths and physics in Cambridge while he focused his research on statistics and genetics until 1919.
 
@@ -351,7 +351,7 @@ There are quite a few ways you can extract and test data. We have covered many o
 
 - All the above data that we extracted from the csv Iris data-set and illustrated, it is quite obvious that the Setosa is a different breed of Iris. One flower species, the Setosa is linearly separable from the other two, but the other two are not linearly separable from each other. The Virginica and Versicolor are quite larger in sepal length and width. The Setosa sepal width was larger in a quite a few cases but overall the Virginica and Versicolor was much the larger species out of the three classes which were analyzed. This was displayed in the statistical data and in the different plots we used to display the data. 
 
-- In summary we can predict from the data we have examined that if the Iris flower has a long sepal of between 6-8cm, long petals of between 5-7cm and wide petals between 1.5-2.5cm then the Iris is most likely an Iris Virginica. We then found out if the Iris flower has a short sepal of between 4.5-5.5cm, short petals of between 1-2cm and very narrow petals then the Iris is most likely an Iris-Setosa. Any Iris flower that which measures in between these two classifications is most likely an Iris-Versicolor going from the above data which we found on the visual data findings. 
+- In summary we can predict from the data we have examined that if the Iris flower has a long sepal of between 6-8cm, long petals of between 5-7cm and wide petals between 1.5-2.5cm, then the Iris is most likely an Iris Virginica. We then found out if the Iris flower has a short sepal of between 4.5-5.5cm, short petals of between 1-2cm, and very narrow petals then the Iris is most likely an Iris-Setosa. Any Iris flower that which measures in between these two classifications is most likely an Iris-Versicolor going from the above data which was displayed on the visual data findings. 
 
 - We then learned how to test the data, train and predict different algorithm models based on score accuracy. We done this by using the classification data through supervised machine learning. We held back some data so we could train using one set and and test using another. We found that (SVM) Support vector Machines had the highest accuracy test. We then went on to test this model with the validation set, from which it got a high score of 93%. Splitting the data and testing different algorithms was something new to me and found it really interesting learning how to do this. This project helped me understand Data Analytics quite a lot more, found it really interesting and something I am looking forward to learning more as the course goes on.
 
